@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  height: 70px;
+  background: #5739c7;
+  /* background: #476C9B; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+
+.brand-name {
+  color: #ffffff;
+  padding-left: 50px;
+}
+
+.landing {
+  display: flex;
+}
+
+.landing-left,
+.landing-right {
+  position: relative;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.landing-left {
+  padding: 0px 50px;
+  flex-direction: column;
+  order: 1;
+}
+.landing-right {
+  order: 2;
+}
+
+.landing-left .form-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.landing-right img{
+  margin-top: 70px;
+  width: 70%;
+}
+
+.landing-left .form-wrapper .error{
+  color: #ff0055;
+  margin-bottom: 10px;
+}
+
+.landing-left .form-wrapper input {
+  height: 50px;
+  width: 75%;
+  font-size: 16px;
+  border-radius: 0;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: solid 2px #5739c7;
+}
+
+.landing-left button {
+  cursor: pointer;
+  max-height: 50px;
+  width: 25%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 0;
+  background: #5739c7;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /* background: #476C9B; */
+  color: #ffffff;
+  outline: none;
+  -moz-outline: none;
+  border: none;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.urls{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.urls .longurl {
+  width: 40%;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.urls .shorturl {
+  width: 20%; 
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.urls .copybutton {
+  width: 20%;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .landing {
+    display: block;
+  }
+  .landing-left,
+  .landing-right {
+    width: 100vw;
+    height: auto;
+  }
+  .landing-left {
+    text-align: center;
+  }
+
+  .landing-left .form-wrapper {
+    font-size: 12px;
+  }
+  .landing-left .form-wrapper input {
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+  
+  .landing-left .form-wrapper button {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .urls{
+    width: 100%;
+    padding: 20px;
+    display: block;
+  }
+  
+  .urls .longurl,
+  .urls .shorturl,
+  .urls .copybutton {
+    width: auto;
+  }
+}
