@@ -16,7 +16,7 @@ const UrlForm = (props) => {
     }
     document.querySelector('button').disabled = true
     document.querySelector('button').innerHTML = "Shrinking.."
-    await axios.post(`http://192.168.1.104:3001/url/generate`, { longUrl: url })
+    await axios.post(`${process.env.REACT_APP_BACKEND}/url/generate`, { longUrl: url })
     .then((response) => {
       console.log(response);
       // setUrl(`http://localhost:3001/${response.data.shortUrl}`)
