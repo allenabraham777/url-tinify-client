@@ -1,15 +1,19 @@
 import React from 'react'
+import copy from 'copy-to-clipboard'
 
 const UrlList = (props) => {
-  return(
-    <div style={{background: '#d3d6db'}}>
+  const clipboard = (index) => {
+    copy(document.querySelector(`#link-${index}`).innerHTML)
+  }
+  return (
+    <div className='urls-wrapper'>
       {
-        props.urls.map((url) => {
+        props.urls.map((url, index) => {
           return (
-            <div className="urls">
+            <div className="urls" key={index}>
               <div className="longurl">{url.url}</div>
-              <div className="shorturl"><a href={url.shortUrl} target="_url">{url.shortUrl}</a></div>
-              <div className="copybutton">Copy</div>
+              <div className="shorturl"><a href={url.shortUrl} target="_url" id={`link-${index}`}>{url.shortUrl}</a></div>
+              <div className="copylink"><button onClick={() => clipboard(index)}>Copy</button></div>
             </div>
           )
         })
