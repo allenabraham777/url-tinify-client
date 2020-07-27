@@ -139,14 +139,17 @@ nav {
 }
 .urls .longurl {
   width: 30%;
+  padding: 16px;
 }
 
 .urls .shorturl {
   width: 30%;
+  text-align: center;
 }
 
 .urls .clicks {
   width: 10%;
+  text-align: center;
 }
 
 .urls .shorturl a {
