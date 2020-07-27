@@ -37,6 +37,8 @@ const LoginSignup = (props) => {
     }
     if(tgt==="Login")
       setIsLoggedIn(true)
+    if(tgt==="SignUp")
+      history.push('/user/login')
   }
 
   return (
