@@ -208,6 +208,10 @@ nav {
     border-radius: 20px;
   }
 
+  .button-wrapper .signup-button {
+    display: none;
+  }
+
   .urls-wrapper {
     padding-top: 0;
   }

@@ -21,9 +21,14 @@
   margin-bottom: 40px;
 }
 
-.form-page form h3{
+.form-page form .error{
   font-size: 12px;
   color: #ff0055;
+}
+
+.form-page form .success{
+  font-size: 12px;
+  color: #43a047;
 }
 
 .form-page form input{
