@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+
+import UrlForm from '../components/UrlForm'
+import UrlList from '../components/UrlList'
+
 import hero from './hero.png'
-import './App.css'
+import './Home.css'
+import NavBar from '../components/Navbar';
 
-import UrlForm from './components/UrlForm'
-import UrlList from './components/UrlList'
-
-function App() {
+function Home() {
   const [urls, updateUrls] = useState([])
 
   useEffect(() => {
@@ -18,9 +20,7 @@ function App() {
   }
   return (
     <div className="App">
-      <nav className="nav">
-        <h1 className="brand-name">Brand</h1>
-      </nav>
+      <NavBar />
       <div className="landing">
         <div className="landing-right">
           <img src={hero} alt="HeroImage"/>
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

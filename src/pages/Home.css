@@ -19,12 +19,38 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.button-wrapper button{ 
+  background: none;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.button-wrapper .login-button {
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.2s;
+  color: #5739c7;
+}
+
+.button-wrapper .login-button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.button-wrapper .signup-button {
+  color: #ffffff;
 }
 
 .brand-name {
   color: #ffffff;
-  padding-left: 50px;
 }
 
 .landing {
