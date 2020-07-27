@@ -14,6 +14,7 @@ function Home() {
   const history = useHistory()
 
   useEffect(() => {
+    localStorage.clear()
     if(isAuthenticated())
     {
       history.push('/dashboard')
