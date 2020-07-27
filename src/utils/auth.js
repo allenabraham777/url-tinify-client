@@ -4,6 +4,7 @@ const login = async (credentials) => {
   const {email, password} = credentials
   return await axios.post(`${process.env.REACT_APP_BACKEND}/login`, {email, password})
   .then((response)=>{
+    console.table(response);
     localStorage.setItem('token', response.data.token)
     return response
   })
