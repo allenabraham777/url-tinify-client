@@ -45,7 +45,7 @@ const LoginSignup = (props) => {
 
   return (
     <form>
-      {props.signup?<h1>SignUp</h1>:<h1>Login to Protal</h1>}
+      {props.signup?<h1>Create an Account</h1>:<h1>Login to cutcut.cf</h1>}
       {message.error?<h3 className="error">{message.error}</h3>:message.success?<h3 className="success">{message.success}</h3>:<></>}
       {props.signup?<input type="text" name="name" value={credentials.name} onChange={updateValue} placeholder="Name" required/>:null}
       <input type="email" name="email" value={credentials.email} onChange={updateValue} placeholder="Email" required/>
