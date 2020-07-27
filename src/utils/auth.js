@@ -25,4 +25,4 @@ const signup = async (credentials) => {
   })
 }
 
-module.exports = {login, signup}
+export {login, signup}

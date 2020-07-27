@@ -14,4 +14,4 @@ const fetchLinks = async () => {
   })
 }
 
-module.exports = {fetchLinks}
+export {fetchLinks}
