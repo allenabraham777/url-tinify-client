@@ -140,6 +140,7 @@ nav {
 .urls .longurl {
   width: 30%;
   padding: 16px;
+  word-wrap: break-word;
 }
 
 .urls .shorturl {
