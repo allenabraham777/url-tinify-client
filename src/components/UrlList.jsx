@@ -12,7 +12,8 @@ const UrlList = (props) => {
           return (
             <div className="urls" key={index}>
               <div className="longurl">{url.url}</div>
-              <div className="shorturl"><a href={url.shortUrl} target="_url" id={`link-${index}`}>{url.shortUrl}</a></div>
+              <div className="shorturl"><a href={`http://${url.shortUrl}`} target="_url" id={`link-${index}`}>{url.shortUrl}</a></div>
+              {props.isLoggedIn?<div className="clicks">{url.clicks} Click(s)</div>:<></>}
               <div className="copylink"><button onClick={() => clipboard(index)}>Copy</button></div>
             </div>
           )

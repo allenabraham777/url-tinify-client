@@ -6,14 +6,21 @@ import UrlList from '../components/UrlList'
 import hero from './hero.png'
 import './Home.css'
 import NavBar from '../components/Navbar';
+import {isAuthenticated} from '../utils/isAuthenticated';
+import { useHistory } from 'react-router-dom';
 
 function Home() {
   const [urls, updateUrls] = useState([])
+  const history = useHistory()
 
   useEffect(() => {
+    if(isAuthenticated())
+    {
+      history.push('/dashboard')
+    }
     const localUrls = JSON.parse(localStorage.getItem('urls'))
     updateUrls(localUrls!==null?localUrls:[])
-  },[])
+  },[history])
   const changeHandler = (url, shortUrl) => {
     updateUrls([{url, shortUrl}, ...urls])
     localStorage.setItem('urls', JSON.stringify([{url, shortUrl},...urls]))

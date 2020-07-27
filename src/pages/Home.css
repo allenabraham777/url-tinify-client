@@ -86,11 +86,13 @@ nav {
   width: 70%;
 }
 
+.dashboard-form .form-wrapper .error,
 .landing-left .form-wrapper .error{
   color: #ff0055;
   margin-bottom: 10px;
 }
 
+.dashboard-form .form-wrapper input,
 .landing-left .form-wrapper input {
   height: 50px;
   width: 75%;
@@ -101,8 +103,8 @@ nav {
   border-bottom-left-radius: 25px;
   border: solid 2px #5739c7;
 }
-
-.landing-left button {
+.dashboard-form .form-wrapper button,
+.landing-left .form-wrapper button {
   cursor: pointer;
   max-height: 50px;
   width: 25%;
@@ -143,6 +145,10 @@ nav {
   width: 30%;
 }
 
+.urls .clicks {
+  width: 10%;
+}
+
 .urls .shorturl a {
   text-decoration: none;
   color: #0022ff;
@@ -174,13 +180,17 @@ nav {
     width: 100vw;
     height: auto;
   }
+
+  .dashboard-form,
   .landing-left {
     text-align: center;
   }
 
+  .dashboard-form .form-wrapper,
   .landing-left .form-wrapper {
     font-size: 12px;
   }
+  .dashboard-form .form-wrapper input,
   .landing-left .form-wrapper input {
     height: 40px;
     width: 100%;
@@ -188,6 +198,7 @@ nav {
     border-radius: 20px;
   }
   
+  .dashboard-form .form-wrapper button,
   .landing-left .form-wrapper button {
     height: 40px;
     line-height: 40px;
@@ -210,11 +221,13 @@ nav {
   
   .urls .longurl,
   .urls .shorturl,
-  .urls .copylink {
+  .urls .copylink,
+  .urls .clicks {
     width: auto;
   }
   .urls .shorturl,
-  .urls .copylink {
-    padding-top: 10px;
+  .urls .copylink,
+  .urls .clicks {
+    padding-top: 20px;
   }
 }
