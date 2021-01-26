@@ -47,3 +47,7 @@ The project is deployed in [vercel.com](https://vercel.com). Visit [cutcut.cf](h
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Server
+[Source Code](https://github.com/allenabraham777/url-tinify-server)
