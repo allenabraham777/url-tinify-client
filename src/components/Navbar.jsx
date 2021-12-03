@@ -5,7 +5,7 @@ import { isAuthenticated } from '../utils/isAuthenticated';
 const NavBar = () => {
   return (
     <nav className="nav">
-      <h1 className="brand-name">cutcut.cf</h1>
+      <h1 className="brand-name">chipit.tk</h1>
       <div className="button-wrapper">
         {isAuthenticated() ?
           <NavLink to="/logout">
